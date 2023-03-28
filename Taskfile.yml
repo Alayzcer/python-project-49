@@ -21,7 +21,11 @@ tasks:
     desc: "run brain-games"
     cmds:
       - poetry run brain-games
-  
-  dist:
+
+  publish:
     cmds:
-      - python -m pip install --user dist/*.whl
+      - poetry publish --dry-run
+
+  package-install:
+    cmds:
+      - pip install --user dist/*.whl
