@@ -29,3 +29,8 @@ tasks:
   package-install:
     cmds:
       - pip install --user dist/*.whl
+  
+  f:
+    desc: invoke flake8
+    cmds:
+      - poetry run flake8 brain_games
