@@ -30,7 +30,7 @@ tasks:
     cmds:
       - pip install --user dist/*.whl
   
-  f:
+  lint:
     desc: invoke flake8
     cmds:
       - poetry run flake8 brain_games
