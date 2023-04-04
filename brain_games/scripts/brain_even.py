@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import prompt
 import random
+import prompt
 from brain_games import cli
 
 
@@ -8,18 +8,22 @@ QUESTION_NUMBER_LIMIT = 255
 GAME_STEPS_COUNT = 3
 
 
-def right_answer(value: int) -> str:
+def get_right_answer(value: int) -> str:
     is_even = value % 2 == 0
-    if is_even:
-        return "yes"
-    else:
-        return "no"
+    return "yes" if is_even else "no"
 
 
-def game_step() -> bool:
+def game_step():
     number = random.randrange(1, QUESTION_NUMBER_LIMIT)
+    right_answer = get_right_answer(number)
     user_answer = prompt.string(f"Question: {number}\n").strip().lower()
-    return user_answer == right_answer(number)
+    check = user_answer == right_answer
+    if check:
+        print("Correct!")
+    else:
+        print(f"'{user_answer}' is wrong answer ;(. "
+              f"Correct answer was '{right_answer}'.")
+    return check
 
 
 def main():
@@ -31,7 +35,6 @@ def main():
         if answer_is_not_right:
             print(f"Let's try again, {user_name}")
             return
-        print("Correct!")
     print(f"Congratulations, {user_name}!")
 
 
