@@ -52,7 +52,7 @@ def get_description():
 
 
 def make_step():
-    limit = 155
+    limit = 555
     a = random.randrange(1, limit)
     b = random.randrange(1, limit)
     question = (
