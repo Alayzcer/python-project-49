@@ -12,8 +12,7 @@ OPERAND_LIMIT = 30
 
 
 def get_description():
-    return ('Answer "yes" if the number is '
-            'even, otherwise answer "no".')
+    return 'What is the result of the expression?'
 
 
 def make_step():
