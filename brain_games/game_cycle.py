@@ -2,7 +2,7 @@
 from brain_games import cli
 
 
-def game_cycle(core):
+def run(core):
     print("Welcome to the Brain Games!")
     user_name = cli.welcome_user()
     print(core["get_description"]())

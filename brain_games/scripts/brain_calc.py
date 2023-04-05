@@ -41,7 +41,7 @@ def get_right_answer(step):
 
 
 def main():
-    game_cycle({
+    game_cycle.run({
         "get_description": get_description,
         "make_step": make_step,
         "get_question": get_question,
