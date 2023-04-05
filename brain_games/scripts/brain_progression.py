@@ -28,7 +28,7 @@ def make_step():
     content = make_sequence(elements_count, first, step_by)
     hidden_elem = content[random_id]
     content[random_id] = ".."
-    question = " ".join(content)
+    question = " ".join(map(str, content))
     return {
         "question": question,
         "right_answer": hidden_elem,
