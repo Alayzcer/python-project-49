@@ -3,15 +3,18 @@ import random
 from brain_games import game_cycle
 
 
-def get_description():
-    return 'What number is missing in the progression?'
-
-
 def make_sequence(len, first, step_by):
+    """ create arithmetic sequence
+    """
     res = [first]
     for i in range(len - 1):
         last = res[i]
         res.append(last + step_by)
+    return res
+
+
+def get_description():
+    return 'What number is missing in the progression?'
 
 
 def make_step():
@@ -22,10 +25,10 @@ def make_step():
     step_by = random.randrange(1, limit)
     elements_count = random.randrange(min_range, max_range)
     random_id = random.randrange(1, elements_count)
-    seq = make_sequence(elements_count, first, step_by)
-    hidden_elem = seq[random_id]
-    seq[random_id] = ".."
-    question = " ".join(seq)
+    content = make_sequence(elements_count, first, step_by)
+    hidden_elem = content[random_id]
+    content[random_id] = ".."
+    question = " ".join(content)
     return {
         "question": question,
         "right_answer": hidden_elem,
