@@ -18,7 +18,7 @@ def make_test_data():
     content = [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
                41, 43, 47, 53, 59, 61, 67, 71,
                1523, 1531, 1543, 1549, 1553, 1559, 1567, 1571, 1579,
-               1583, 1597, 1601, 1607, 1609, 1613, 1619, 1621, 1627, 1637, 1657]
+               1583, 1597, 1601, 1607, 1609, 1613, 1619, 1621, 1627, ]
     return content
 
 
@@ -46,7 +46,7 @@ def get_description():
 
 
 def make_step():
-    limit = 55
+    limit = 111
     value = random.randrange(3, limit)
     answer = prime_int_to_str(value)
     return {
