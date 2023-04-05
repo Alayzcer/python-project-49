@@ -16,3 +16,7 @@ def welcome_user():
     name = get_user_name()
     print(f"Hello, {name}!")
     return name
+
+
+def get_user_answer_on_question(value):
+    return prompt.string(value).strip().lower()
