@@ -10,7 +10,7 @@ def run(core):
     for _ in range(game_steps_count):
         step = core["make_step"]()
         qustion = core["get_question"](step)
-        user_answer = cli.get_user_answer_on_question(qustion)
+        user_answer = cli.get_user_answer_on_question(qustion + "\n")
         if not core["check_user_answer"](step, user_answer):
             right_answer = core["get_right_answer"](step)
             print(f"'{user_answer}' is wrong answer ;(. "
