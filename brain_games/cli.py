@@ -2,12 +2,8 @@ import prompt
 
 
 def get_user_name():
-    while True:
-        name = prompt.string('May I have your name? ').strip()
-        # skip only spaces
-        if 0 == len(name):
-            continue
-        return name
+    name = prompt.string('May I have your name? ', False).strip()
+    return name
 
 
 def welcome_user():
@@ -20,4 +16,5 @@ def welcome_user():
 
 def get_user_answer_on_question(value):
     print("Question: ", value)
-    return prompt.string("Your answer:").strip().lower()
+    answer = prompt.string('Your answer: ', False).strip()
+    return answer
