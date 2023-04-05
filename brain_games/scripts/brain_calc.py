@@ -33,7 +33,11 @@ def get_question(step):
 
 
 def check_user_answer(step, user_answer):
-    return user_answer == step["right_answer"]
+    try:
+        input = int(user_answer)
+    except ValueError:
+        return False
+    return input == step["right_answer"]
 
 
 def get_right_answer(step):
