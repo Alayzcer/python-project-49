@@ -15,7 +15,7 @@ def run(core):
             right_answer = core["get_right_answer"](step)
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'.")
-            print(f"Let's try again, {user_name}")
+            print(f"Let's try again, {user_name}!")
             return
         print("Correct!")
     print(f"Congratulations, {user_name}!")
