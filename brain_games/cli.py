@@ -15,6 +15,6 @@ def welcome_user():
 
 
 def get_user_answer_on_question(value):
-    print("Question: ", value)
+    print("Question: ", value.strip())
     answer = prompt.string('Your answer: ', False).strip()
     return answer
