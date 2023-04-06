@@ -10,7 +10,8 @@ def even_to_str(value):
 
 
 def get_description():
-    return 'What is the result of the expression?'
+    return ('Answer "yes" if given number '
+            'is prime. Otherwise answer "no".')
 
 
 def make_step():
