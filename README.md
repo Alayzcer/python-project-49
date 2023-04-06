@@ -4,7 +4,7 @@
 
 ### CodeClimate:
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/348a176e1511ca661fda/test_coverage)](https://codeclimate.com/github/Alayzcer/python-project-49/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/348a176e1511ca661fda/maintainability)](https://codeclimate.com/github/Alayzcer/python-project-49/maintainability)
 
 ### Asciinema:
 
