@@ -55,9 +55,7 @@ def make_step():
     limit = 555
     a = random.randrange(1, limit)
     b = random.randrange(1, limit)
-    question = (
-        f"{a} {b}"
-        f"Your answer: ")
+    question = f"{a} {b}"
     right_answer = handle_gcd(a, b)
     return {
         "question": question,
