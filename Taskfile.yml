@@ -28,7 +28,7 @@ tasks:
 
   package-install:
     cmds:
-      - pip install --user dist/*.whl
+      - pip install --user dist/*.whl --force-reinstall
   
   lint:
     desc: invoke flake8
