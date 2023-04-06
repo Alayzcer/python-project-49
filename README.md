@@ -10,6 +10,6 @@
 
 - [brain-even](https://asciinema.org/a/G0GQJTq14xdFY3lEDFomQI5Ts)
 - [brain-calc](https://asciinema.org/a/cSqNci4gNsbhCcOtRbX9OF7iM)
-- brain-gcd
+- [brain-gcd](https://asciinema.org/a/Klc5MgJI1FA61pSyKQoPleNYZ)
 - [brain-progression](https://asciinema.org/a/4EjfvEAz29A9ArHlUuD2lNXM0)
 - [brain-prime](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU)
