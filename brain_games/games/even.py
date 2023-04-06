@@ -15,8 +15,8 @@ def get_description():
 
 
 def make_step():
-    no = random.randrange(0, NUMBERS_RANGE_LIMIT)
-    question = str(no)
+    no = random.randrange(1, NUMBERS_RANGE_LIMIT)
+    question = str(no).strip()
     right_answer = even_to_str(no)
     return {
         "question": question,
