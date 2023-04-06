@@ -2,10 +2,15 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "brain games - even, prime and another"
+repository = "https://github.com/Alayzcer/python-project-49"
 authors = ["alayzcer <alayzcer@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
+]
+classifiers = [
+  "License :: Free for non-commercial use",
+  "TOPIC :: GAMES/ENTERTAINMENT",
 ]
 
 
