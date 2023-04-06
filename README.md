@@ -13,3 +13,19 @@
 - [brain-gcd](https://asciinema.org/a/Klc5MgJI1FA61pSyKQoPleNYZ)
 - [brain-progression](https://asciinema.org/a/4EjfvEAz29A9ArHlUuD2lNXM0)
 - [brain-prime](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU)
+
+### Installing:
+
+This project uses [poetry](https://python-poetry.org/).
+To install you can use next commands.
+For Unix user:
+
+- make install
+- make build
+- make package-install
+
+For Windows user:
+
+- task i
+- task b
+- task package-install
