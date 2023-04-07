@@ -22,4 +22,4 @@ def make_step():
     b = random.randrange(1, OPERAND_LIMIT)
     question = f"{a} {name} {b}"
     answer = just_do_it(a, b)
-    return [question, answer]
+    return [question, str(answer)]

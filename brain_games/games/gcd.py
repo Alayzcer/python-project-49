@@ -25,4 +25,4 @@ def make_step():
     b = random.randrange(1, limit)
     question = f"{a} {b}"
     answer = handle_gcd(a, b)
-    return [question, answer]
+    return [question, str(answer)]

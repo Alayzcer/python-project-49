@@ -27,4 +27,4 @@ def make_step():
     answer = content[random_id]
     content[random_id] = ".."
     question = " ".join(map(str, content))
-    return [question, answer]
+    return [question, str(answer)]
