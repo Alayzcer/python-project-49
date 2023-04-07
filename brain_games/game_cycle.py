@@ -13,7 +13,7 @@ def run(game_description, creating_gnext_step):
     for _ in range(GAME_STEPS_COUNT):
         question, right_answer = creating_gnext_step()
         print("Question:", question)
-        user_answer = prompt.string('Your answer:', False).strip().lower()
+        user_answer = prompt.string('Your answer: ', False).strip().lower()
         if right_answer != user_answer:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'.")
