@@ -3,12 +3,14 @@ import prompt
 from brain_games import cli
 
 
+GAME_STEPS_COUNT = 3
+
+
 def run(core):
     print("Welcome to the Brain Games!")
     user_name = cli.welcome_user()
     print(core["get_description"]())
-    game_steps_count = 3
-    for _ in range(game_steps_count):
+    for _ in range(GAME_STEPS_COUNT):
         step = core["make_step"]()
         question = core["get_question"](step).strip()
         print("Question:", question)
