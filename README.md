@@ -8,11 +8,16 @@
 
 ### Asciinema:
 
-- [brain-even](https://asciinema.org/a/G0GQJTq14xdFY3lEDFomQI5Ts)
-- [brain-calc](https://asciinema.org/a/cSqNci4gNsbhCcOtRbX9OF7iM)
-- [brain-gcd](https://asciinema.org/a/Klc5MgJI1FA61pSyKQoPleNYZ)
-- [brain-progression](https://asciinema.org/a/4EjfvEAz29A9ArHlUuD2lNXM0)
-- [brain-prime](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU)
+- brain-even
+  [![asciicast](https://asciinema.org/a/G0GQJTq14xdFY3lEDFomQI5Ts.svg)](https://asciinema.org/a/G0GQJTq14xdFY3lEDFomQI5Ts)
+- brain-calc
+  [![asciicast](https://asciinema.org/a/cSqNci4gNsbhCcOtRbX9OF7iM.svg)](https://asciinema.org/a/cSqNci4gNsbhCcOtRbX9OF7iM)
+- brain-gcd
+  [![asciicast](https://asciinema.org/a/Klc5MgJI1FA61pSyKQoPleNYZ.svg)](https://asciinema.org/a/Klc5MgJI1FA61pSyKQoPleNYZ)
+- brain-progression
+  [![asciicast](https://asciinema.org/a/4EjfvEAz29A9ArHlUuD2lNXM0.svg)](https://asciinema.org/a/4EjfvEAz29A9ArHlUuD2lNXM0)
+- brain-prime
+  [![asciicast](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU.svg)](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU)
 
 ### Installing:
 
