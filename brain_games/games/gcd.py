@@ -24,34 +24,5 @@ def make_step():
     a = random.randrange(1, limit)
     b = random.randrange(1, limit)
     question = f"{a} {b}"
-    right_answer = handle_gcd(a, b)
-    return {
-        "question": question,
-        "right_answer": right_answer,
-    }
-
-
-def get_question(step):
-    return step["question"]
-
-
-def check_user_answer(step, user_answer):
-    try:
-        input = int(user_answer)
-    except ValueError:
-        return False
-    return input == step["right_answer"]
-
-
-def get_right_answer(step):
-    return step["right_answer"]
-
-
-def get_api():
-    return {
-        "get_description": get_description,
-        "make_step": make_step,
-        "get_question": get_question,
-        "check_user_answer": check_user_answer,
-        "get_right_answer": get_right_answer,
-    }
+    answer = handle_gcd(a, b)
+    return [question, answer]

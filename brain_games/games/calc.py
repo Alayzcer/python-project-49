@@ -14,40 +14,12 @@ def get_description():
 
 
 def make_step():
+    """ It creates a question and a right answer
+    """
     op_id = random.randrange(0, len(OPERATORS))
+    name, just_do_it = OPERATORS[op_id]
     a = random.randrange(1, OPERAND_LIMIT)
     b = random.randrange(1, OPERAND_LIMIT)
-    question = f"{a} {OPERATORS[op_id][0]} {b}"
-    right_answer = OPERATORS[op_id][1](a, b)
-    return {
-        "question": question,
-        "right_answer": right_answer,
-    }
-
-
-def get_question(step):
-    return step["question"]
-
-
-def check_user_answer(step, user_answer):
-    try:
-        input = int(user_answer)
-    except ValueError:
-        return False
-    return input == step["right_answer"]
-
-
-def get_right_answer(step):
-    return step["right_answer"]
-
-
-def get_api():
-    """ return functions of calc game
-    """
-    return {
-        "get_description": get_description,
-        "make_step": make_step,
-        "get_question": get_question,
-        "check_user_answer": check_user_answer,
-        "get_right_answer": get_right_answer,
-    }
+    question = f"{a} {name} {b}"
+    answer = just_do_it(a, b)
+    return [question, answer]

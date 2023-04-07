@@ -4,7 +4,7 @@ from brain_games.games import calc
 
 
 def main():
-    game_cycle.run(calc.get_api())
+    game_cycle.run(calc.get_description(), calc.make_step)
 
 
 if __name__ == '__main__':

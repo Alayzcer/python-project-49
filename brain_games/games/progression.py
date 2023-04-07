@@ -24,36 +24,7 @@ def make_step():
     elements_count = random.randrange(min_range, max_range)
     random_id = random.randrange(1, elements_count)
     content = make_sequence(elements_count, first, step_by)
-    hidden_elem = content[random_id]
+    answer = content[random_id]
     content[random_id] = ".."
     question = " ".join(map(str, content))
-    return {
-        "question": question,
-        "right_answer": hidden_elem,
-    }
-
-
-def get_question(step):
-    return step["question"]
-
-
-def check_user_answer(step, user_answer):
-    try:
-        input = int(user_answer)
-    except ValueError:
-        return False
-    return input == step["right_answer"]
-
-
-def get_right_answer(step):
-    return step["right_answer"]
-
-
-def get_api():
-    return {
-        "get_description": get_description,
-        "make_step": make_step,
-        "get_question": get_question,
-        "check_user_answer": check_user_answer,
-        "get_right_answer": get_right_answer,
-    }
+    return [question, answer]
