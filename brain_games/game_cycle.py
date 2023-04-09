@@ -18,6 +18,7 @@ def run(game_description, creating_gnext_step):
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'.")
             print(f"Let's try again, {user_name}!")
-            return
+            break
+    else:
         print("Correct!")
-    print(f"Congratulations, {user_name}!")
+        print(f"Congratulations, {user_name}!")
