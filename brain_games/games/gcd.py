@@ -4,18 +4,16 @@ import random
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def handle_gcd(a, b):
+def get_gcd(a, b):
     a = abs(a)
     b = abs(b)
     if b > a:
         a, b = (b, a)
-    while True:
-        if 0 == b:
-            return a
-        a %= b
-        if 0 == a:
-            return b
-        b %= a
+    while b != 0:
+        n = a % b
+        a = b
+        b = n
+    return a
 
 
 def make_step():
@@ -23,5 +21,5 @@ def make_step():
     a = random.randrange(1, limit)
     b = random.randrange(1, limit)
     question = f"{a} {b}"
-    answer = handle_gcd(a, b)
+    answer = get_gcd(a, b)
     return [question, str(answer)]
