@@ -17,9 +17,8 @@ def get_gcd(a, b):
 
 
 def make_step():
-    limit = 555
-    a = random.randrange(1, limit)
-    b = random.randrange(1, limit)
+    a = random.randrange(1, 555)
+    b = random.randrange(1, 555)
     question = f"{a} {b}"
     answer = get_gcd(a, b)
     return [question, str(answer)]
