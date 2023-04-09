@@ -6,13 +6,9 @@ DESCRIPTION = ('Answer "yes" if the number '
 NUMBERS_RANGE_LIMIT = 345
 
 
-def even_to_str(value):
-    is_even = value % 2 == 0
-    return "yes" if is_even else "no"
-
-
 def make_step():
     no = random.randrange(1, NUMBERS_RANGE_LIMIT)
     question = str(no)
-    answer = even_to_str(no)
+    no_is_even = no % 2 == 0
+    answer = "yes" if no_is_even else "no"
     return [question, answer]
