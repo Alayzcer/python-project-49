@@ -20,6 +20,6 @@ def run(core):
                   f"Correct answer was '{right_answer}'.")
             print(f"Let's try again, {user_name}!")
             break
-    else:
         print("Correct!")
+    else:
         print(f"Congratulations, {user_name}!")
