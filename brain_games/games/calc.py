@@ -12,9 +12,9 @@ def make_step():
     """ It creates a question and a right answer
     """
     op_id = random.randrange(0, len(OPERATORS))
-    name, just_do_it = OPERATORS[op_id]
+    operator_name, operator_fn = OPERATORS[op_id]
     a = random.randrange(1, 30)
     b = random.randrange(1, 30)
-    question = f"{a} {name} {b}"
-    answer = just_do_it(a, b)
+    question = f"{a} {operator_name} {b}"
+    answer = operator_fn(a, b)
     return [question, str(answer)]
