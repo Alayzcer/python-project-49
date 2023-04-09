@@ -15,12 +15,8 @@ def is_prime(number):
     return True
 
 
-def prime_int_to_str(value):
-    return "yes" if is_prime(value) else "no"
-
-
 def make_step():
     limit = 111
     question = random.randrange(3, limit)
-    answer = prime_int_to_str(question)
+    answer = "yes" if is_prime(question) else "no"
     return [str(question), answer]
