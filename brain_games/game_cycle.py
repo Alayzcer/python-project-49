@@ -6,6 +6,8 @@ GAME_STEPS_COUNT = 3
 
 
 def run(core):
+    """ invoke game cycle
+    """
     print("Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ', False).strip()
     print(f"Hello, {user_name}!")
