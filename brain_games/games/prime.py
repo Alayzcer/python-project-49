@@ -16,7 +16,7 @@ def is_prime(number):
     return True
 
 
-def make_step():
+def get_data_of_next_step():
     limit = 111
     question = random.randrange(3, limit)
     answer = "yes" if is_prime(question) else "no"

@@ -14,7 +14,7 @@ def make_sequence(len, first, step_by):
     return res
 
 
-def make_step():
+def get_data_of_next_step():
     min_range = 5
     max_range = 15
     limit = 55

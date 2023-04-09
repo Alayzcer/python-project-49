@@ -16,7 +16,7 @@ def get_gcd(a, b):
     return a
 
 
-def make_step():
+def get_data_of_next_step():
     a = random.randrange(1, 555)
     b = random.randrange(1, 555)
     question = f"{a} {b}"

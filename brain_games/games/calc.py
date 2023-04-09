@@ -8,7 +8,7 @@ OPERATORS = [
 ]
 
 
-def make_step():
+def get_data_of_next_step():
     """ It creates a question and a right answer
     """
     op_id = random.randrange(0, len(OPERATORS))

@@ -12,7 +12,7 @@ def run(game):
     print(f"Hello, {user_name}!")
     print(game.DESCRIPTION)
     for _ in range(GAME_STEPS_COUNT):
-        question, right_answer = game.make_step()
+        question, right_answer = game.get_data_of_next_step()
         print("Question:", question)
         user_answer = prompt.string('Your answer: ').strip().lower()
         if right_answer != user_answer:
