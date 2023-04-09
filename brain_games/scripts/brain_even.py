@@ -4,7 +4,7 @@ from brain_games.games import even
 
 
 def main():
-    game_cycle.run(even.get_description(), even.make_step)
+    game_cycle.run(even)
 
 
 if __name__ == '__main__':

@@ -1,16 +1,12 @@
 import random
 
-
+DESCRIPTION = 'What is the result of the expression?'
 OPERATORS = [
     ["+", lambda a, b: a + b],
     ["-", lambda a, b: a - b],
     ["*", lambda a, b: a * b],
 ]
 OPERAND_LIMIT = 30
-
-
-def get_description():
-    return 'What is the result of the expression?'
 
 
 def make_step():

@@ -1,6 +1,9 @@
 import random
 
 
+DESCRIPTION = 'What number is missing in the progression?'
+
+
 def make_sequence(len, first, step_by):
     """ create arithmetic sequence
     """
@@ -9,10 +12,6 @@ def make_sequence(len, first, step_by):
         last = res[i]
         res.append(last + step_by)
     return res
-
-
-def get_description():
-    return 'What number is missing in the progression?'
 
 
 def make_step():

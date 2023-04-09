@@ -1,6 +1,9 @@
 import random
 
 
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
+
 def handle_gcd(a, b):
     a = abs(a)
     b = abs(b)
@@ -13,10 +16,6 @@ def handle_gcd(a, b):
         if 0 == a:
             return b
         b %= a
-
-
-def get_description():
-    return 'Find the greatest common divisor of given numbers.'
 
 
 def make_step():

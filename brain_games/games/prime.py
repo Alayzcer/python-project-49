@@ -1,5 +1,8 @@
 import random
 
+DESCRIPTION = ('Answer "yes" if given number '
+               'is prime. Otherwise answer "no".')
+
 
 def is_prime(value):
     if value <= 1:
@@ -14,11 +17,6 @@ def is_prime(value):
 
 def prime_int_to_str(value):
     return "yes" if is_prime(value) else "no"
-
-
-def get_description():
-    return ('Answer "yes" if given number '
-            'is prime. Otherwise answer "no".')
 
 
 def make_step():
