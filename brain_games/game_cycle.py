@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import prompt
-from brain_games import cli
 
 
 GAME_STEPS_COUNT = 3
@@ -8,7 +7,8 @@ GAME_STEPS_COUNT = 3
 
 def run(game_description, creating_gnext_step):
     print("Welcome to the Brain Games!")
-    user_name = cli.welcome_user()
+    user_name = prompt.string('May I have your name? ', False).strip()
+    print(f"Hello, {user_name}!")
     print(game_description)
     for _ in range(GAME_STEPS_COUNT):
         question, right_answer = creating_gnext_step()
