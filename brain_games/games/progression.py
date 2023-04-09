@@ -4,11 +4,11 @@ import random
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def make_sequence(len, first, step_by):
+def make_sequence(length, first, step_by):
     """ create arithmetic sequence
     """
     res = [first]
-    for i in range(len - 1):
+    for i in range(length - 1):
         last = res[i]
         res.append(last + step_by)
     return res
