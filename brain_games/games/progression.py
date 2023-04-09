@@ -17,9 +17,8 @@ def make_sequence(len, first, step_by):
 def get_data_of_next_step():
     min_range = 5
     max_range = 15
-    limit = 55
     first = random.randrange(1, 555)
-    step_by = random.randrange(1, limit)
+    step_by = random.randrange(1, 55)
     elements_count = random.randrange(min_range, max_range)
     random_id = random.randrange(1, elements_count)
     content = make_sequence(elements_count, first, step_by)

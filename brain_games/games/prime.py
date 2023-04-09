@@ -8,16 +8,15 @@ DESCRIPTION = ('Answer "yes" if given number '
 def is_prime(number):
     if number <= 1:
         return False
-    if 2 == number:
+    if number == 2:
         return True
     for i in range(3, number):
-        if 0 == number % i:
+        if number % i == 0:
             return False
     return True
 
 
 def get_data_of_next_step():
-    limit = 111
-    question = random.randrange(3, limit)
+    question = random.randrange(3, 111)
     answer = "yes" if is_prime(question) else "no"
     return [str(question), answer]
