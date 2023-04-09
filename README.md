@@ -6,7 +6,23 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/348a176e1511ca661fda/maintainability)](https://codeclimate.com/github/Alayzcer/python-project-49/maintainability)
 
-### Asciinema:
+### Installing:
+
+This project uses [poetry](https://python-poetry.org/).
+To install you can use next commands.
+For Unix user:
+
+- make install
+- make build
+- make package-install
+
+For Windows user:
+
+- task i
+- task b
+- task package-install
+
+### Demo:
 
 #### brain-even
 
@@ -27,19 +43,3 @@
 #### brain-prime
 
 [![asciicast](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU.svg)](https://asciinema.org/a/mi6PHKuEiCzi5HKEhY8kn7bhU)
-
-### Installing:
-
-This project uses [poetry](https://python-poetry.org/).
-To install you can use next commands.
-For Unix user:
-
-- make install
-- make build
-- make package-install
-
-For Windows user:
-
-- task i
-- task b
-- task package-install
