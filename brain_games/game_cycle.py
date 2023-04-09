@@ -8,13 +8,13 @@ def run(game):
     """ invoke game cycle
     """
     print("Welcome to the Brain Games!")
-    user_name = prompt.string('May I have your name? ', False).strip()
+    user_name = prompt.string('May I have your name? ').strip()
     print(f"Hello, {user_name}!")
     print(game.DESCRIPTION)
     for _ in range(GAME_STEPS_COUNT):
         question, right_answer = game.make_step()
         print("Question:", question)
-        user_answer = prompt.string('Your answer: ', False).strip().lower()
+        user_answer = prompt.string('Your answer: ').strip().lower()
         if right_answer != user_answer:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'.")
