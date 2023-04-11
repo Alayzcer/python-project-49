@@ -16,12 +16,6 @@ For Unix user:
 - make build
 - make package-install
 
-For Windows user:
-
-- task i
-- task b
-- task package-install
-
 ### Demo:
 
 #### brain-even
