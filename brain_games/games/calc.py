@@ -11,8 +11,8 @@ OPERATORS = [
 def get_data_of_next_step():
     """ It creates a question and a right answer
     """
-    op_id = random.randrange(0, len(OPERATORS))
-    operator_name, operator_fn = OPERATORS[op_id]
+    random_operator_id = random.randrange(0, len(OPERATORS))
+    operator_name, operator_fn = OPERATORS[random_operator_id]
     a = random.randrange(1, 30)
     b = random.randrange(1, 30)
     question = f"{a} {operator_name} {b}"
